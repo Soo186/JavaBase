@@ -11,6 +11,7 @@ public class AccountEx02 {
 			accountPrint(chanho);
 			accountPrint(gildong);
 			accountPrint(minho);
+			accountPrint(new Account("333-778-99999" , "손흥민" , 500000)); //익명 개첵
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 			e.printStackTrace();
