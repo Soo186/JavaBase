@@ -16,7 +16,16 @@ public class Television implements RemoteControl {
 
 	@Override
 	public void setVolume(int volume) {
-		this.volume = volume;
+		if (volume > RemoteControl.MAX_VOLUME){
+			this.volume = RemoteControl.MAX_VOLUME;       //아무리 올려서 맥스랑 똑같게 볼륨이 설정됨.
+		}else if (volume < RemoteControl.MIN_VOLUME) {
+
+			this.volume = RemoteControl.MIN_VOLUME;
+		}else {
+			this.volume = volume;
+		}
+		System.out.println("현재 TV 볼륨 : " + this.volume);
+
 
 	}
 }
