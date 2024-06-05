@@ -1,6 +1,6 @@
 package oop3;
 
-public class TEst02Operator {
+public class   TEst02Operator {
     public static void main(String[] args) {
         //대입연산자
         int a=1;
